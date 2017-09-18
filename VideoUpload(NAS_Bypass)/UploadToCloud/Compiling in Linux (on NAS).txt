@@ -1,0 +1,15 @@
+#Compiling Upload script on NAS (Linux terminal), using Mono
+
+Files Needed:
+
+SimpeJSON.cs
+VideoUploader.cs
+ICSharpCode.SharpZipLib.dll
+
+Compile on the NAS using:
+sudo mcs VideoUploader.cs SimpleJSON.cs -lib:/volume1/@appstore/Mono/usr/lib/mono/4.5 -r:System.Net.Http
+
+Run using Mono:
+mono VideoUploader.exe
+
+Needs additional method for SSL certificate authentication (added directly on NAS Source)

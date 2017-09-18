@@ -1,0 +1,11 @@
+Open and import to Visual Studio Console Solution
+
+Add SimpleJSON.cs to project
+Reference ICSharpCode.SharpZipLib.dll
+Build project with VideoUploader.cs as the startup object
+
+Place Settings.cfg file in the same directory as the executable with content following the below structure:
+
+NASDir;C:/Recording_Backup/
+EmailAddress;<1st.email@mursion.com>, <2nd.email@company.com>
+AuthKey;extsysmursiondvi:1qscZDR%
